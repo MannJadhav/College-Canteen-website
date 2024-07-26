@@ -3,9 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+    
+    <title>College Application Form</title>
+    <link rel="stylesheet" href="./style.css">
+   
+  </head>
+ <body>
+    <div class="form-container">
+        <img src="./Logo/IT.jpg" height ="50" weight="200" alt="college logo">
+        <h2>College Application Form</h2>
+        <form id="applicationForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="dob">Date of Birth:</label>
+            <input type="date" id="dob" name="dob" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" name="phone" required>
+
+            <label for="address">Address:</label>
+            <textarea id="address" name="address" rows="4" required></textarea>
+
+            <label for="course">Course:</label>
+            <select id="course" name="course" required>
+                <option value="computer_science">Computer Science</option>
+                <option value="Information Technology">Information Technology</option>
+                <option value=Artifical Intelligence & Machine Learningengineering>Artifical Intelligence & Machine Learning</option>
+                <option value="Artifical Intelligence & Data science">Artifical Intelligence & Data science</option>
+                <option value="Computer Science & Cyber Security">Computer Science & Cyber Security</option>
+                <option value="Electronic & Telecommunication">Electronic & Telecommunication</option>
+                <option value="Electronic & Computer Science">Electronic & Computer Science</option>
+                <option value="Mechanical">Mechanical</option>
+                <option value="civil">civil</option>
+                <option value="Mechanical & Mechatronic">Mechanical & Mechatronic</option>
+                <option value="Internet of Things">Internet of Things</option>
+
+            </select>
+            <button type="submit">Submit</button>
+            <button type="reset">Clear</button>
+            <footer> Created by Mann Jadhav TE-IT-A-37</footer>
+        </form>
+    </div>
+    <div class="button">
+        <button id="Menu" onclick= "myfunction()">Menu</button>
+    </div>
+    <script src="./script.js"></script>
     
 </body>
 </html>
